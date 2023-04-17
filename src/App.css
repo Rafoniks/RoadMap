@@ -1,38 +1,645 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+/* @import '../theme'; */
+
+.blueWrap {
+  background-color:#2E64FE;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 360px;
+}
+
+
+@media only screen and (min-width: 990px) {
+  .blueWrap {
+    flex-direction: row;
+    gap: 150px;
+    text-align: start;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .blueWrap {
+    /* gap: 400px;
+    padding-left: 50px;
+    padding-right: 150px; */
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .blueWrap {
+    /* padding-left: 50px;
+    padding-right: 250px; */
+  }
+}
+
+.insideBlue {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 990px) {
+  .insideBlue {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.logoWrapper {
+  /* display: flex;
+  text-align:center;
+  align-items: center;
+  justify-content: center; */
+}
+@media only screen and (min-width: 990px) {
+  .logoWrapper {
+    /* justify-content: start; */
+    text-align: start;
+  }
+}
+
+.text1 {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  font-size: 24px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (min-width: 990px) {
+  .text1 {
+    justify-content: start;
+    text-align: start;
+  }
+}
+
+.text2 {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  opacity:90%;
+
+}
+@media only screen and (min-width: 990px) {
+  .text2 {
+    justify-content: start;
+    text-align: start;
+  }
+}
+
+.text3 {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  opacity:80%;
+
+}
+@media only screen and (min-width: 990px) {
+  .text3 {
+    justify-content: start;
+    text-align: start;
+  }
+}
+
+.eventImg {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: 2;
+  grid-column: 2;
+  grid-row: inherit;
+  
+}
+
+@media only screen and (min-width: 360px) {
+  .gridContainer {
+    grid-template-rows: 2;
+    grid-template-columns: 3;
+  }
+}
+.blueWrapIMG {
+  display:none
+}
+@media only screen and (min-width: 767px) {
+  .blueWrapIMG {
+    display:inline
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .blueWrapIMG {
+    width: 300px;
+    height: 300px;
+  }
+}
+.speaker {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(206, 202, 202);
+  padding: 10px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.speaker2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(206, 202, 202);
+  padding: 10px;
+  grid-column: 1;
+  grid-row: 2;
+}
+.speaker3 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(206, 202, 202);
+  padding: 10px;
+  grid-column: 1;
+  grid-row: 3;
+}
+@media only screen and (min-width: 990px) {
+  .speaker3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+.speaker4 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(206, 202, 202);
+  padding: 10px;
+  grid-column: 1;
+  grid-row: 4;
+}
+@media only screen and (min-width: 767px) {
+  .speaker4 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+
+.speaker5 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(206, 202, 202);
+  padding: 10px;
+  grid-column: 1;
+  grid-row: 5;
+}
+@media only screen and (min-width: 767px) {
+  .speaker5 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+.speaker6 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(206, 202, 202);
+  padding: 10px;
+  grid-column: 1;
+  grid-row: 6;
+}
+
+@media only screen and (min-width: 767px) {
+  .speaker6 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .speaker6 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+
+.Icon {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.wrapper { 
+  text-align: center;
+  width: 360px;
+}
+
+.rowWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 990px) {
+  .rowWrapper {
+    flex-direction: row
+  }
+}
+.eventWrapper {
+  display: grid;
+}
+.event1 {
+  flex-direction: row;
+  display: flex;
+  width: 320px;
+}
+@media only screen and (min-width: 770px) {
+  .event1 {
+    width: 450px;
+
+  }
+}
+@media only screen and (min-width: 990px) {
+  .event1 {
+    width: 450px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+.event2 {
+  flex-direction: row;
+  display: flex;
+  width: 320px;
+}
+@media only screen and (min-width: 770px) {
+  .event2 {
+    width: 450px;
+
+  }
+}
+@media only screen and (min-width: 990px) {
+  .event2 {
+    width: 450px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+.event3 {
+  flex-direction: row;
+  display: flex;
+  width: 320px;
+}
+@media only screen and (min-width: 770px) {
+  .event3 {
+    width: 450px;
+
+  }
+}
+@media only screen and (min-width: 990px) {
+  .event3 {
+    width: 450px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+.event4 {
+  flex-direction: row;
+  display: flex;
+  width: 320px;
+}
+@media only screen and (min-width: 770px) {
+  .event4 {
+    width: 450px;
+
+  }
+}
+@media only screen and (min-width: 990px) {
+  .event4 {
+    width: 450px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .row {
+    width: 560px;
+  }
+}
+
+.rowTicket {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 767px) {
+  .rowTicket {
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+
+.forms {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.rowForms {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: right; */
+  display: grid;
+}
+
+@media only screen and (min-width: 990px) {
+  .rowForms {
+    flex-direction: row;
+  }
+}
+
+.formsData {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+@media only screen and (min-width: 420px) {
+  .formsData {
+    flex-direction: row;
+  }
+}
+
+.insideFormsWrapper {
+  /* text-align: right; */
+  grid-column: 1;
+  grid-row: 1;
+  width: 330px;
+  gap: 10px;
+}
+@media only screen and (min-width: 420px) {
+  .insideFormsWrapper {
+    width: 405px;
+  }
+}
+@media only screen and (min-width: 770px) {
+  .insideFormsWrapper {
+    width: 600px;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .insideFormsWrapper {
+    width: 425px;
+  }
+}
+.insideSocialWrapper {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 2;
+}
+@media only screen and (min-width: 990px) {
+  .insideSocialWrapper {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+
+
+.boldTime {
+  border-bottom: 1px solid grey
+}
+
+.boldEvent {
+  text-transform: uppercase;
+  font-size: x-small;
+
+}
+
+.eventText { 
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: small;
+  color: rgb(102, 99, 102);
+  justify-content: center;
+  text-align: start;
+  opacity:90%;
+}
+.button {
+
+  color: white;
+  background-color: red;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 40px;
+  width: 140px;
+  text-transform: uppercase;
+
+}
+
+
+.button2 {
+
+  color: white;
+  background-color: red;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  margin-bottom: 50px;
+  height: 40px;
+  width: 140px;
+  text-transform: uppercase;
+
+}
+
+.buttonWrapper {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 990px) {
+  .buttonWrapper {
+    text-align: start;
+  }
+}
+
+.text4 {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 27px;
+  display: flex;
+  font-size: 20px;
+  color: rgb(102, 99, 102);
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.offers {
   display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: rgb(102, 99, 102);
+  justify-content: center;
+  text-align: center;
+  opacity:80%;
+}
+
+.text5 {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: rgb(102, 99, 102);
+  opacity:90%;
+  width: 320px;
+}
+
+.yellowWrap {
+  background-color:#faea11;
+  display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-width: 360px;
+}
+
+.number {
+  font-size: 60px;
+  color: rgba(209, 65, 9, 0.712);
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.Window {
+  line-height: 10px;
+}
+
+.event {
+  width: 360px;
+  height: 180px;
+  flex-direction: row;
+}
+
+.formsWrapper {
+  background-color: rgb(48, 47, 47);
+}
+
+.contact {
   color: white;
+  text-align: center;
+  padding-top: 20px;
+  opacity:80%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.input {
+  height: 30px;
+  width: 300px;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+@media only screen and (min-width: 770px) {
+  .input {
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .input {
+    width: 320px;
+  }
+}
+.message {
+  height: 60px;
+  width: 300px;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+@media only screen and (min-width: 770px) {
+  .message {
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .message {
+    width: 320px;
+  }
+}
+.buttonSend {
+  background-color: #c0a611;
+  height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sendWrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.text6 {
+  color: white;
+  margin-inline: 15px;
+  text-align: center;
+  border-bottom: white;
+  min-width: 320px;
+}
+/* @media only screen and (min-width: 770px) {
+  .text6 {
+    width: 500px;
   }
-  to {
-    transform: rotate(360deg);
+} */
+@media only screen and (min-width: 990px) {
+  .text6 {
+    width: 320px;
   }
+}
+.underLine {
+  border-bottom: 1px solid white;
+  min-width: 320px;
+  text-align: center;
+}
+/* @media only screen and (min-width: 770px) {
+  .underLine {
+    width: 500px;
+  }
+} */
+@media only screen and (min-width: 990px) {
+  .underLine {
+    width: 320px;
+  }
+}
+.underFooterWrapper {
+  background-color: #202020;
+}
+
+.rights {
+  color: white;
+  font-size: small;
+  padding: 20px 10px 5px 50px;
+  text-align: center;
+}
+
+.underRights {
+  color: #c0a611;
+  font-size: xx-small;
+  margin-bottom: 25px;
+}
+
+.underRightsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
 }
