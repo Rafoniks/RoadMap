@@ -29,7 +29,7 @@ function App() {
             <div> <h1 className='text1'> Attend The Most Awaited Conference of 2015 </h1></div>
             <div> <h2 className='text2'> to start you up with your business!</h2></div>
             <div> <p className='text3'> 20 to 22 October, 2015</p></div>
-            <div className='buttonWrapper'><button className='button' > buy tickets now </button></div>
+            <button className='button' > buy tickets now </button>
           </div>
           <div>
             <img className='blueWrapIMG' src={rocket} alt='rocket' height='200px' width='200px' />
@@ -57,9 +57,10 @@ function App() {
           </div>
           <div  className='eventImg'>
             <img src={globe} alt='globe' height='150px' width='200px' />
-            <div className='offers'> <h3 >People around the globe </h3></div>
-            <div  className='text5'> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at varius vel pharetra.</p></div>
+            <div> <h3 className='offers'>People around the globe </h3></div>
+            <div> <p className='text5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu bibendum at 
+            varius vel pharetra.</p></div>
           </div>
       </div>
 
@@ -188,23 +189,25 @@ function App() {
 
       <div className='formsWrapper'>
         <div className='rowForms'>
-          <div className='insideFormsWrapper'>
+          <div>
             <div className='contact'> Contact Form</div>
-            <div className='formsData'>
-              <div style={{marginRight:'16px'}} className='forms'>Name</div>
-              <div><input type='text' className='input'/></div>
+              <div className='formsAndButton'>
+                <div className='formsData'>
+                  <div style={{marginRight:'16px'}} className='forms'>Name</div>
+                  <div><input type='text' className='input'/></div>
+                </div>
+                <div className='formsData'>
+                  <div style={{marginRight:'16px'}} className='forms'>Email</div>
+                  <div><input type='email' className='input'/></div>
+                </div>
+                  <div className='formsData'>
+                    <div  className='forms'>Your Message</div>
+                    <div><input type='text' className='message'/></div>
+                  </div>
+                <div className='sendWrapper'><button className='buttonSend'> SEND -></button></div>
+              </div>
             </div>
-            <div className='formsData'>
-              <div style={{marginRight:'16px'}} className='forms'>Email</div>
-              <div><input type='email' className='input'/></div>
-            </div>
-            <div className='formsData'>
-            <div  className='forms'>Your Message</div>
-            <div><input type='text' className='message'/></div>
-            </div>
-            <div className='sendWrapper'><button className='buttonSend'> SEND -></button></div>
-          </div>
-          <div className='insideSocialWrapper'>
+          <div>
             <div  className='contact'> Twitter Feed</div>
             <div className='underLine'><p className='text6'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                   sed do eiusmod tempor</p></div>
@@ -214,14 +217,15 @@ function App() {
                   sed do eiusmod tempor</p></div>
           </div>
         </div>
-        <div className='underFooterWrapper'>
+
+        <footer className='FooterWrapper'>
           <p className='rights'> 2015. DesignerDada.com | All rights reserved.</p>
           <div className='underRightsWrapper'>
             <p className='underRights'> About Us</p>
             <p className='underRights'> Privacy Policy</p>
             <p className='underRights'> Terms and Condition</p>
           </div>
-        </div>
+        </footer>
       </div>
 
   
